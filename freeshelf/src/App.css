@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.thumnail {
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.thumbnail {
+  max-height: 200px;
+  padding-top: 20px;
 }
