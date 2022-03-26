@@ -1,10 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html, 
+body {
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  margin: 5px;
+  
+}
+.page-title {
+  text-align: left;
+  padding-bottom: 35px;
+  text-indent: 20px;
+  /* text-decoration: underline; */
+  border-bottom: 4px dashed cornflowerblue;
+}
+.header {
+  overflow: hidden;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+.thumbnail {
+  max-height: 200px;
+  max-width: 200px;
+  /* padding-top: 20px; */
+  /* position: absolute; */
+ 
+  /* right: 0px; */
+  float: right;
+  top: 0px;
+  border: 4px solid cornflowerblue;
+  margin: 40px;
+  
+}
+.more {
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.less {
+  background-color: cornflowerblue; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* .booky {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid red;
+} */
+
+/* .booky .thumbnail{
+  float: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  width: 120px;
+} */
+
+.booky {
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 1px;
+  padding: 12px;
+  padding-left: 40px;
+  /* padding-bottom: 12px;
+  padding-top: 12px;
+  padding-right: 12px; */
+  /* border-bottom-width: 1px;
+  border-bottom-style: solid; */
+  border-bottom: 2px dashed cornflowerblue;
+}
+
 .App {
   text-align: center;
 }
 
-.thumnail {
-
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -40,8 +126,3 @@
   }
 }
 
-
-.thumbnail {
-  max-height: 200px;
-  padding-top: 20px;
-}
