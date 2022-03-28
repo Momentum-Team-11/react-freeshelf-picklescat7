@@ -59,6 +59,14 @@ body {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.more::before {
+  content: '▶  ';
+}
+
+.less::before {
+  content: '▼  ';
+}
 /* .booky {
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +87,7 @@ body {
   margin-left: 1px;
   padding: 12px;
   padding-left: 40px;
+  width: 95%;
   /* padding-bottom: 12px;
   padding-top: 12px;
   padding-right: 12px; */
@@ -113,16 +122,4 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 

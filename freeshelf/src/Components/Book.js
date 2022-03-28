@@ -1,9 +1,7 @@
 import { useState } from 'react'
-// import pic from './img_not_avail.png'
-
 
 const Book = ({title, author, short, image, url, publisher, pubDate, long}) => {
-  const [expanded, setExpanded] = useState(false)
+const [expanded, setExpanded] = useState(false)
   
   return (
     <div className="booky">
@@ -23,14 +21,14 @@ const Book = ({title, author, short, image, url, publisher, pubDate, long}) => {
       <p>{short}</p>
       {expanded ? (
         <div>
-          <button className="more" onClick={() => setExpanded(false)}>Show less</button>
+          <button className="less" aria-expanded="false" onClick={() => setExpanded(false)}>Show less</button>
             <p><b>URL:</b> <a href={url}>{url}</a></p>
             <p><b>Publisher:</b> {publisher || "Not available"}</p>
             <p><b>Publication date:</b> {pubDate || "Not available"}</p>
             <p>Full description: {long}</p>
         </div>
         ) : (
-          <button className="less" onClick={() => setExpanded(true)}>Show more</button>
+          <button className="more" aria-expanded="true" onClick={() => setExpanded(true)}>Show more</button>
         )}
       </div>
   )
@@ -39,3 +37,9 @@ const Book = ({title, author, short, image, url, publisher, pubDate, long}) => {
 {/* always show: title author shortDescription coverImageURl  */}
 {/* hidden: url publisher publicationDate detailedDescription */}
 export default Book
+
+
+// import pic from './img_not_avail.png'
+// import { ExpandMore } from '@material-ui/icons';
+// import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
+// import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';–

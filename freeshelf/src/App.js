@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <div className="header">
-        <h1>Freeshelf: Little Free Library of Code 👩‍💻</h1>
+        <h1>Freeshelf: Little Free Library of Code 📚</h1>
       </div>
         <h1 className="page-title">Book List</h1>
         <div className="book-container">
@@ -24,7 +24,7 @@ const App = () => {
             publisher={booky.publisher}
             pubDate={booky.publicationDate}
             long={booky.detailedDescription}
-            key={booky.idx}
+            key={idx}
             />
         })}
         </div> 
